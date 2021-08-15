@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+::selection
+{
+    background: crimson;
+    
+}
+
+header .navbar .nav-items
+{
+    display: flex;
+    justify-content: center;
+    background: rgb(255,199,94);
+    background: radial-gradient(circle, rgba(255,199,94,0.9164040616246498) 0%, rgba(255,255,255,0.927608543417367) 50%, rgba(27,176,0,0.9136029411764706) 100%);
+    width: 100%;
+    position: fixed;
+}
+
+header .navbar .nav-items img
+{
+    height: 100px;
+    width: 300px;
+    cursor: pointer;
+    filter: brightness(0%);
+    transition: .3s ;
+    margin-right: 50px;
+}
+header .navbar .nav-items img:hover
+{
+    filter: brightness(100%);
+}
+
+header .navbar .nav-items ul
+{
+    list-style: none;
+    display: flex;
+    margin-top: 40px;
+    margin-right: 300px;
+}
+
+header .navbar .nav-items ul li
+{
+    font-size: 1.2rem;
+    margin: 0 45px;
+}
+
+header .navbar .nav-items ul li a
+{
+
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    transition: .3s;
+}
+
+header .navbar .nav-items ul li a:hover
+{
+    color: rgb(255, 110, 53);
+}
+header .navbar .nav-items ul li a img
+{
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.nav-items ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgba(27,176,0,0.9);
+    display: block;
+    margin: auto;
+}
+
+.nav-items ul li:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+
+
+header .hero-about img
+{
+    padding-top: 135px;
+    width: 100%;
+    
+}
+
+header .content
+{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,0.9164040616246498) 0%, rgba(167,167,167,0.927608543417367) 42%, rgba(70,70,70,0.9136029411764706) 100%);
+}
+header .bio
+{
+    width: 85%;
+    padding-left: 15rem;
+}
+header .bio h1
+{
+    font-size: 4rem;
+    padding-top: 50px;
+    color: crimson;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 15px;
+}
+header .bio h1 span{
+    color: black;
+}
+header .bio p
+{
+    font-size: 1.16rem;
+    text-align: justify;
+    line-height: 2.5rem;
+}
+
+header .bio p span{
+    color: crimson;
+}
+
+header .achievements-contianer .ach
+{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 400px;
+    
+}
+
+header .achievements-contianer .ach .left-img img
+{
+    height: 400px;
+    width: 400px;
+    margin-left: 50px;
+    transition: .5s;
+    border: 2px solid black;
+}
+
+header .achievements-contianer .ach .right-img img
+{
+    height: 400px;
+    width: 400px;
+    margin-right: 130px;
+    transition: .5s;
+    border: 2px solid black;
+}
+header .achievements-contianer .ach .right-img:hover img,
+header .achievements-contianer .ach .left-img:hover img
+{
+    transform: scale(1.2);
+    border: 5px solid black;
+    padding: 10px;
+    filter: brightness(50%);
+    cursor: pointer;
+}
+
+header .achievements-contianer .ach-body h1
+{
+    font-size: 4rem;
+    padding-top: 80px;
+    color: yellow;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 15px;
+}
+header .achievements-contianer .ach-body h1 span
+{
+    color: black;
+}
+
+header .achievements-contianer .ach-body p
+{
+    margin-top: 2rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+header .achievements-contianer .ach-body p span
+{
+    font-size: 1.2rem;
+    color: yellow;
+    font-weight: 600;
+}
+
+
+
+
+
+
+/* 
+header .ach .left-img img
+{
+    height: 200px;
+    width: 200px;
+    margin-top: 10rem;
+}
+header .ach .right-img img
+{
+    height: 200px;
+    width: 200px;
+    margin-top: 10rem;
+}
+header .ach h1
+{
+    font-size: 4rem;
+    padding-top: 80px;
+    color: yellow;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 15px;
+}
+header .ach h1 span{
+    color: black;
+}
+header .ach
+{
+    width: 85%;
+    padding-left: 15rem;
+    display: flex;
+}
+header .ach p
+{
+    margin-top: 10rem;
+    text-align: center;
+    padding-top: 3rem;
+    line-height: 2rem;
+}
+
+header .ach p span
+{
+    font-size: 1.2rem;
+    color: yellow;
+    font-weight: 600;
+} */
+
+
