@@ -7,30 +7,36 @@
     <title>More-info</title>
     <!-- css link  -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resultsStyles.css">
     <style>
-        header .heading h1 {
+        header .navbar .nav-items
+    {
+        position: unset;
+    }
+    header .hero-about img
+    {
+        padding-top: 0px;
+        filter: brightness(50%);
+    }
+    header .heading h3,h5 {
         position: absolute;
-        top: 60%;
-        left: 36%;
+        top: 35%;
+        left: 10%;
         text-align: center;
         text-transform: uppercase;
-        letter-spacing: .8rem;
+        letter-spacing: .5rem;
         font-size: 3rem;
-        color: crimson;
+        color: rgb(2, 187, 2);
+        font-weight: 1000;
     }
-    header .heading h1::after{
-    content: '';
-    width: 100%;
-    height: 2px;
-    background: white;
-    display: block;
-    margin: auto;
-    }
-    header .heading h1 span
+    header .heading h5
     {
-        color: white;
+        top: 49%;
+        left: 40%;
+        font-size: 1.5rem;
+        color: rgb(255, 115, 0);
     }
-
+    
     
 
     </style>
@@ -47,20 +53,48 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="timeline.html">TimeLine</a></li>
-                <li><a href="#">More-info<br><a href="#ach" style="text-transform: none; font-size: 14px;">
-                    <img src="./sports-images/icons8-right-arrow-24.png">
-                    PersonalLife</a><br><a href="#ach" style="text-transform: none; font-size: 14px;">
-                    <img src="./sports-images/icons8-right-arrow-24.png">
-                    About</a></a></li>
+                <li><a href="#">Match-Results<br></a>
             </ul>
         </div>
     </div>
     
     <div class="hero-about">
-        <img src="./sports-images/moreinfosindhu.jpg" alt="" style="height: 200vh;">
+        <img src="./sports-images/timelinesindhu.jpg" alt="" >
     </div>
     <div class="heading">
-        <h1>More<span>-</span>info</h1>
+        <h3>Want to know the rank for given year?</h3>
+        <h5>Please select any year:</h5>
     </div>
-    
+
+
 </header>
+
+<form id="datavalues">
+    <p>
+        <select name="" id="year">
+            <option value="year" disabled selected>Year</option>
+            <option>2003</option>
+            <option>2004</option>
+            <option>2005</option>
+            <option>2006</option>
+            <option>2007</option>
+            <option>2008</option>
+            <option>2009</option>
+            <option>2010</option>
+            <option>2011</option>
+            <option>2012</option>
+            <option>2013</option>
+            <option>2014</option>
+            <option>2015</option>
+            <option>2019</option>
+            <option>2017</option>
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+            <option>2021</option>
+        </select>
+    </p>
+</form>
+
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+</body>
